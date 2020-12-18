@@ -4,14 +4,53 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "page-builder",
+        "navigationBarBackgroundColor": "#f00",
+        "navigationBarTextStyle": "white",
+        "navigationBarShadow": {},
+        "navigationStyle": "default",
+        // 设置为 true 则页面整体不能上下滚动（bounce效果），只在页面配置中有效，在globalStyle中设置无效
+        "disableScroll": false,
+        "backgroundTextStyle":"dark",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 50,
+        "h5": {}
+      }
+    },
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "主页",
+        "navigationStyle": "custom"
       }
     }
   ],
   "globalStyle": {
+    // 导航栏标题颜色及状态栏前景颜色, 仅支持 black/white
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    // 导航栏标题文字内容
+    "navigationBarTitleText": "page-builder",
+    // 顶部导航栏的背景颜色，只支持哈希值
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    // 下拉 loading 的样式，仅支持 dark / light
+    "backgroundTextStyle": "dark",
+    // 下拉显示出来的窗口的背景色
+    "backgroundColor": "#F8F8F8",
+    // 导航栏样式，仅支持 default/custom
+    "navigationStyle": "default",
+    // 是否开启下拉刷新
+    "enablePullDownRefresh": false,
+    // 页面上拉触底事件触发时距页面底部距离，单位只支持px
+    "onReachBottomDistance": 50,
+    // 引用小程序组件
+    "usingComponents": {},
+    //
+    "mp-weixin": {
+
+    },
+    // 特定平台的配置
+    "h5": {
+
+    }
   }
 }

@@ -16,6 +16,30 @@ export default Vue.extend({
       title: "Hello"
     };
   },
+  beforeCreate() {
+    createLog(this).i("beforeCreate");
+  },
+  created() {
+    createLog(this).i("created");
+  },
+  beforeMount() {
+    createLog(this).i("beforeMount");
+  },
+  mounted() {
+    createLog(this).i("mounted");
+  },
+  beforeUpdate() {
+    createLog(this).i("beforeUpdate");
+  },
+  updated() {
+    createLog(this).i("updated");
+  },
+  beforeDestroy() {
+    createLog(this).i("beforeDestroy");
+  },
+  destroyed() {
+    createLog(this).i("destroyed");
+  },
   onLoad() {
     createLog(this).i("onLoad");
   },
