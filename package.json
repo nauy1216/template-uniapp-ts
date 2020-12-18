@@ -90,6 +90,7 @@
     "eslint": "^7.15.0",
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-vue": "^7.3.0",
+    "husky": "^4.3.6",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
