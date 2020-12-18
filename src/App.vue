@@ -1,15 +1,25 @@
 <script lang="ts">
 import Vue from "vue";
+import { Log } from "@/utils";
 export default Vue.extend({
   mpType: "app",
   onLaunch() {
-    console.log("App Launch");
+    Log.i("App Launch");
   },
   onShow() {
-    console.log("App Show");
+    Log.i("App Show");
   },
   onHide() {
-    console.log("App Hide");
+    Log.i("App Hide");
+  },
+  onError(err) {
+    Log.i("onError", err);
+  },
+  onPageNotFound(option) {
+    Log.i("onPageNotFound", option);
+  },
+  onThemeChange() {
+    Log.i("onThemeChange");
   }
 });
 </script>
