@@ -4,7 +4,7 @@
     v-if="element.type === 'view'"
     :data-mi-id="element.id"
     :style="element.props.style"
-    @click="handleClick"
+    @click="handleclick"
   >
     <template v-if="element.children && element.children.length > 0">
       <element v-for="(child, index) in element.children" :element="child" :key="index"></element>
@@ -15,15 +15,6 @@
   <text v-else-if="element.type === 'text'" :data-mi-id="element.id" :style="element.props.style">
     {{ element }}
   </text>
-
-  <!--image-->
-  <image
-    v-else-if="element.type === 'image'"
-    :data-mi-id="element.id"
-    :style="element.props.style"
-    :src="element.props.src"
-  >
-  </image>
 
   <!--不存在tag属性, 则认为是文本节点-->
   <text v-else>
@@ -47,8 +38,8 @@ export default Vue.extend({
     console.log("props", this.element);
   },
   methods: {
-    handleClick(ev) {
-      console.log("props", this.element, ev);
+    handleClick() {
+      //
     }
   }
 });

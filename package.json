@@ -42,7 +42,8 @@
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint": "eslint src --ext .vue,.ts,.js --fix",
     "mock": "node server/mockServer.js",
-    "copy:uilib": "node script/copy-uilib.js"
+    "copy:uilib": "node script/copy-uilib.js",
+    "build:ele": "node script/build-element.js"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-29820201110001",

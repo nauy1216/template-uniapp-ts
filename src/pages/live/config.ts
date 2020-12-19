@@ -1,15 +1,15 @@
-export function uuid() {
+export function uid() {
   return String(+new Date()) + parseInt("" + Math.random() * 10000);
 }
 export default {
-  uid: uuid(),
+  id: uid(),
   type: "view",
   props: {},
   children: [
     "hello",
     "hello",
     {
-      uid: uuid(),
+      id: uid(),
       type: "view",
       props: {
         style: "color: red;",
@@ -18,6 +18,14 @@ export default {
         }
       },
       children: ["hello"]
+    },
+    {
+      id: uid(),
+      type: "image",
+      props: {
+        style: "width: 80rpx; height: 80rpx;",
+        src: "/static/center/user.png"
+      }
     }
   ]
 };
