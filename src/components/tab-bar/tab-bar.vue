@@ -4,11 +4,7 @@
 
 <script>
 import Vue from "vue";
-import uTabbar from "uview-ui/components/u-tabbar/u-tabbar.vue";
 export default Vue.extend({
-  components: {
-    uTabbar
-  },
   data() {
     return {
       current: 0,

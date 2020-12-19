@@ -7,11 +7,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import uButton from "uview-ui/components/u-button/u-button.vue";
 export default Vue.extend({
-  components: {
-    uButton
-  },
+  components: {},
   data() {
     return {
       title: "Hello",

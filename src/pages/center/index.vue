@@ -17,12 +17,8 @@
 </template>
 
 <script lang="ts">
-import uIcon from "uview-ui/components/u-icon/u-icon.vue";
 import Vue from "vue";
 export default Vue.extend({
-  components: {
-    uIcon
-  },
   data() {
     return {
       // NavBar

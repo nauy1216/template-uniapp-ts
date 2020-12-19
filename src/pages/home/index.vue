@@ -30,13 +30,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import uSearch from "uview-ui/components/u-search/u-search.vue";
-import uTabs from "uview-ui/components/u-tabs/u-tabs.vue";
 export default Vue.extend({
-  components: {
-    uSearch,
-    uTabs
-  },
   data() {
     return {
       keyword: "",
@@ -76,9 +70,9 @@ export default Vue.extend({
     }
   },
   onLoad() {
-    this.$http.get("/datalist").then(res => {
-      console.log(res);
-    });
+    // this.$http.get("/datalist").then(res => {
+    //   console.log(res);
+    // });
   },
   methods: {
     change(index) {
