@@ -34,7 +34,7 @@ function handler(req, res) {
     let data = getData(filename)(req.query, req.body)
     setTimeout(() => {
       res.send(data)
-    }, 500)
+    }, 100)
   } catch (e) {
     res.send('Error')
   }

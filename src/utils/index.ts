@@ -25,7 +25,8 @@ export function createLog(vm: any) {
       console.error(vm, ...args);
     },
     i(...args: any[]): void {
-      console.log("【mp-page-builder】 ", ...args, vm);
+      args;
+      // console.log("【mp-page-builder】 ", ...args, vm);
     }
   };
 }

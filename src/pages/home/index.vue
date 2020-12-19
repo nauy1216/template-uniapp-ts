@@ -14,8 +14,7 @@ export default Vue.extend({
     };
   },
   onLoad() {
-    debugger;
-    // this.$http.get("/datalist");
+    this.$http.get("/datalist");
   },
   methods: {}
 });
