@@ -11,7 +11,7 @@
         "navigationStyle": "custom",
         // 设置为 true 则页面整体不能上下滚动（bounce效果），只在页面配置中有效，在globalStyle中设置无效
         "disableScroll": false,
-        "backgroundTextStyle":"dark",
+        "backgroundTextStyle": "dark",
         "enablePullDownRefresh": true,
         "onReachBottomDistance": 50,
         "h5": {}
@@ -87,13 +87,9 @@
     // 引用小程序组件
     "usingComponents": {},
     // 特定平台的配置
-    "mp-weixin": {
-
-    },
+    "mp-weixin": {},
     // 特定平台的配置
-    "h5": {
-
-    }
+    "h5": {}
   },
   "tabBar": {
     "color": "#7A7E83",
