@@ -1,16 +1,17 @@
 <template>
   <view class="content">
-    直播
+    <mi-navbar title="直播"></mi-navbar>
+    <mi-element :element="config"></mi-element>
   </view>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import config from "./config";
 export default Vue.extend({
   data() {
     return {
-      title: "Hello",
-      top: 0
+      config
     };
   },
   onLoad() {

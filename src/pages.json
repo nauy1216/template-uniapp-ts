@@ -85,7 +85,9 @@
     // 页面上拉触底事件触发时距页面底部距离，单位只支持px
     "onReachBottomDistance": 50,
     // 引用小程序组件
-    "usingComponents": {},
+    "usingComponents": {
+      "element": "/components/element/element"
+    },
     // 特定平台的配置
     "mp-weixin": {},
     // 特定平台的配置
