@@ -5543,7 +5543,7 @@ fs-extra@^8.1.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0.0:
+fs-extra@^9.0.0, fs-extra@^9.0.1:
   version "9.0.1"
   resolved "https://registry.npm.taobao.org/fs-extra/download/fs-extra-9.0.1.tgz?cache=0&sync_timestamp=1591230015842&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffs-extra%2Fdownload%2Ffs-extra-9.0.1.tgz#910da0062437ba4c39fedd863f1675ccfefcb9fc"
   integrity sha1-kQ2gBiQ3ukw5/t2GPxZ1zP78ufw=
@@ -11602,6 +11602,11 @@ uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
+
+uview-ui@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.npm.taobao.org/uview-ui/download/uview-ui-1.8.3.tgz#c2602a6bf7b3eef603fd632959eb3450ad4a0b9b"
+  integrity sha1-wmAqa/ez7vYD/WMpWes0UK1KC5s=
 
 v8-compile-cache@^2.0.3:
   version "2.2.0"

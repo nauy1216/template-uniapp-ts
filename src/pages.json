@@ -57,7 +57,11 @@
   // 只要组件安装在项目的components目录下，并符合components/组件名称/组件名称.vue目录结构。
   // 就可以不用引用、注册，直接在页面中使用。
   "easycom": {
-    "autoscan": true
+    "autoscan": true,
+    "custom": {
+      // 扫描uview-ui的组件
+      "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+    }
   },
   "globalStyle": {
     // 导航栏标题颜色及状态栏前景颜色, 仅支持 black/white
@@ -78,7 +82,7 @@
     "onReachBottomDistance": 50,
     // 引用小程序组件
     "usingComponents": {},
-    //
+    // 特定平台的配置
     "mp-weixin": {
 
     },
