@@ -2,6 +2,8 @@
 node_modules/
 unpackage/
 dist/
+.uview-ui/
+.uni-ui/
 
 # local env files
 .env.local
