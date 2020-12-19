@@ -5,7 +5,7 @@
       'padding-top': statusBarHeight + 'px'
     }"
   >
-    <nav-bar title="个人中心"></nav-bar>
+    <mi-navbar title="个人中心"></mi-navbar>
     <view class="p-center__user">
       <image class="p-center__user-img" src="/static/center/user.png"></image>
       <view>

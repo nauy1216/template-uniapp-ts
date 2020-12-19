@@ -70,9 +70,6 @@
 </template>
 
 <script>
-import uniStatusBar from "@dcloudio/uni-ui/lib/uni-status-bar/uni-status-bar.vue";
-import uniIcons from "@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue";
-
 /**
  * NavBar 自定义导航栏
  * @description 导航栏组件，主要用于头部导航
@@ -94,11 +91,6 @@ import uniIcons from "@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue";
  * @event {Function} clickTitle 中间标题点击时触发
  */
 export default {
-  name: "UniNavBar",
-  components: {
-    uniStatusBar,
-    uniIcons
-  },
   props: {
     title: {
       type: String,
