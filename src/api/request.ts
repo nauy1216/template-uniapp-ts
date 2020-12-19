@@ -32,4 +32,19 @@ request.interceptors.response.use(
   }
 );
 
-export default request;
+export default {
+  get<T = unknown>(url: string, data?: any) {
+    return new Promise<T>(resolve => {
+      request.get(url, data).then(res => {
+        resolve(res.data);
+      });
+    });
+  },
+  post<T = unknown>(url: string, data?: any) {
+    return new Promise<T>(resolve => {
+      request.post(url, data).then(res => {
+        resolve(res.data);
+      });
+    });
+  }
+};
