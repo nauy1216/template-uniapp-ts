@@ -5,6 +5,7 @@ export default Vue.extend({
   mpType: "app",
   onLaunch() {
     Log.i("App Launch");
+    this.init();
   },
   onShow() {
     Log.i("App Show");
@@ -20,10 +21,16 @@ export default Vue.extend({
   },
   onThemeChange() {
     Log.i("onThemeChange");
+  },
+  methods: {
+    init() {
+      this.$state.global.getSystemInfoSync();
+    }
   }
 });
 </script>
 
-<style>
+<style lang="scss">
 /*每个页面公共css */
+@import "uview-ui/index.scss";
 </style>

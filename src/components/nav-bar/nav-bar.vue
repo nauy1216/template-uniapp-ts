@@ -6,7 +6,10 @@
         'uni-navbar--shadow': shadow,
         'uni-navbar--border': border
       }"
-      :style="{ 'background-color': backgroundColor, 'padding-top': paddingTop + 'px' }"
+      :style="{
+        'background-color': backgroundColor,
+        'padding-top': $state.global.statusBarHeight + 'px'
+      }"
       class="uni-navbar__content"
     >
       <uni-status-bar v-if="statusBar" />
@@ -142,17 +145,10 @@ export default {
       default: true
     }
   },
-  data() {
-    return {
-      paddingTop: 0
-    };
-  },
   mounted() {
     if (uni.report && this.title !== "") {
       uni.report("title", this.title);
     }
-    const info = uni.getSystemInfoSync();
-    this.paddingTop = info.statusBarHeight;
   },
   methods: {
     onClickLeft() {
