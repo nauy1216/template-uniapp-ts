@@ -8,7 +8,7 @@
         "navigationBarBackgroundColor": "#f00",
         "navigationBarTextStyle": "white",
         "navigationBarShadow": {},
-        "navigationStyle": "default",
+        "navigationStyle": "custom",
         // 设置为 true 则页面整体不能上下滚动（bounce效果），只在页面配置中有效，在globalStyle中设置无效
         "disableScroll": false,
         "backgroundTextStyle":"dark",
@@ -21,6 +21,34 @@
       "path": "pages/home/index",
       "style": {
         "navigationBarTitleText": "主页",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/live/index",
+      "style": {
+        "navigationBarTitleText": "直播",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/category/index",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chat/index",
+      "style": {
+        "navigationBarTitleText": "聊天",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/center/index",
+      "style": {
+        "navigationBarTitleText": "个人中心",
         "navigationStyle": "custom"
       }
     }
@@ -52,5 +80,44 @@
     "h5": {
 
     }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    // 至少包含两项， 不超过5项
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/imgs/home.png",
+        "selectedIconPath": "static/imgs/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/live/index",
+        "iconPath": "static/imgs/live.png",
+        "selectedIconPath": "static/imgs/live-select.png",
+        "text": "直播"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "iconPath": "static/imgs/category.png",
+        "selectedIconPath": "static/imgs/category-select.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "static/imgs/chat.png",
+        "selectedIconPath": "static/imgs/chat-select.png",
+        "text": "聊天"
+      },
+      {
+        "pagePath": "pages/center/index",
+        "iconPath": "static/imgs/center.png",
+        "selectedIconPath": "static/imgs/center-select.png",
+        "text": "个人中心"
+      }
+    ]
   }
 }

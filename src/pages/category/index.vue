@@ -1,10 +1,6 @@
 <template>
   <view class="content">
-    <nav-bar title="首页"></nav-bar>
-    <image class="logo" src="../../static/logo.png"></image>
-    <view>
-      <text class="title">{{ title }}</text>
-    </view>
+    <nav-bar title="分类"></nav-bar>
   </view>
 </template>
 

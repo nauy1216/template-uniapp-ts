@@ -1,9 +1,6 @@
 <template>
   <view class="content">
-    <image class="logo" src="../../static/logo.png"></image>
-    <view>
-      <text class="title">{{ title }}</text>
-    </view>
+    loading...
   </view>
 </template>
 
@@ -41,6 +38,11 @@ export default Vue.extend({
     createLog(this).i("destroyed");
   },
   onLoad() {
+    setTimeout(() => {
+      uni.switchTab({
+        url: "/pages/home/index"
+      });
+    });
     createLog(this).i("onLoad");
   },
   onShow() {
@@ -103,25 +105,9 @@ export default Vue.extend({
 
 <style>
 .content {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin: 200rpx auto 50rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
 }
 </style>

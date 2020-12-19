@@ -77,8 +77,10 @@ import uniIcons from "@dcloudio/uni-ui/lib/uni-icons/uni-icons.vue";
  * @property {String} title 标题文字
  * @property {String} leftText 左侧按钮文本
  * @property {String} rightText 右侧按钮文本
- * @property {String} leftIcon 左侧按钮图标（图标类型参考 [Icon 图标](http://ext.dcloud.net.cn/plugin?id=28) type 属性）
- * @property {String} rightIcon 右侧按钮图标（图标类型参考 [Icon 图标](http://ext.dcloud.net.cn/plugin?id=28) type 属性）
+ * @property {String} leftIcon 左侧按钮图标（图标类型参考 [Icon 图标]
+ * (http://ext.dcloud.net.cn/plugin?id=28) type 属性）
+ * @property {String} rightIcon 右侧按钮图标（图标类型参考 [Icon 图标]
+ * (http://ext.dcloud.net.cn/plugin?id=28) type 属性）
  * @property {String} color 图标和文字颜色
  * @property {String} backgroundColor 导航栏背景颜色
  * @property {Boolean} fixed = [true|false] 是否固定顶部
