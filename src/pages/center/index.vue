@@ -1,17 +1,37 @@
 <template>
-  <view class="content">
+  <view
+    class="p-center"
+    :style="{
+      'padding-top': statusBarHeight + 'px'
+    }"
+  >
     <nav-bar title="个人中心"></nav-bar>
+    <view class="p-center__user">
+      <image class="p-center__user-img" src="/static/center/user.png"></image>
+      <view>
+        <view>132****57978105</view>
+        <view>勋章墙<u-icon name="arrow-right" color="#ff0000" size="28"></u-icon></view>
+      </view>
+    </view>
   </view>
 </template>
 
 <script lang="ts">
+import uIcon from "uview-ui/components/u-icon/u-icon.vue";
 import Vue from "vue";
 export default Vue.extend({
+  components: {
+    uIcon
+  },
   data() {
     return {
-      title: "Hello",
-      top: 0
+      // NavBar
     };
+  },
+  computed: {
+    statusBarHeight() {
+      return this.$state.global.statusBarHeight;
+    }
   },
   onLoad() {
     //
@@ -20,27 +40,14 @@ export default Vue.extend({
 });
 </script>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin: 200rpx auto 50rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
+<style lang="scss">
+@include b(center) {
+  @include e(user) {
+    height: 360rpx;
+  }
+  @include e(user-img) {
+    width: 200rpx;
+    height: 200rpx;
+  }
 }
 </style>

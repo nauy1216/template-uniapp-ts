@@ -14,6 +14,7 @@
         disabled
         search-icon="search"
         v-model="keyword"
+        style="width: 460rpx"
       ></u-search>
     </view>
     <!-- <u-button type="primary" @click="handleClick">主要按钮</u-button> -->
@@ -70,7 +71,7 @@ export default Vue.extend({
     };
   },
   computed: {
-    statusBarHeight() {
+    statusBarHeight(): number {
       return this.$state.global.statusBarHeight;
     }
   },
