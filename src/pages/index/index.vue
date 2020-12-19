@@ -7,6 +7,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { createLog } from "@/utils";
+import logo from "./logo";
 export default Vue.extend({
   data() {
     return {
@@ -39,8 +40,18 @@ export default Vue.extend({
   },
   onLoad() {
     setTimeout(() => {
+      // 跳转到首页
       uni.switchTab({
-        url: "/pages/home/index"
+        url: "/pages/home/index",
+        success() {
+          // 跳转成功后动态设置tabar
+          uni.setTabBarItem({
+            index: 0,
+            text: "new",
+            iconPath: "static/imgs/home.png",
+            selectedIconPath: "static/imgs/home-select.png"
+          });
+        }
       });
     });
     createLog(this).i("onLoad");

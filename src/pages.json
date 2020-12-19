@@ -92,6 +92,7 @@
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
+    "position": "bottom",
     // 至少包含两项， 不超过5项
     "list": [
       {
