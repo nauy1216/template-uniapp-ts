@@ -7,7 +7,6 @@
 <script lang="ts">
 import Vue from "vue";
 import { createLog } from "@/utils";
-import logo from "./logo";
 export default Vue.extend({
   data() {
     return {
