@@ -6,11 +6,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import NavBar from "@/components/nav-bar/index.vue";
 export default Vue.extend({
-  components: {
-    NavBar
-  },
   data() {
     return {
       title: "Hello",

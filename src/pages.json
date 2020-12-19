@@ -53,6 +53,12 @@
       }
     }
   ],
+  // 传统vue组件，需要安装、引用、注册，三个步骤后才能使用组件。easycom将其精简为一步。
+  // 只要组件安装在项目的components目录下，并符合components/组件名称/组件名称.vue目录结构。
+  // 就可以不用引用、注册，直接在页面中使用。
+  "easycom": {
+    "autoscan": true
+  },
   "globalStyle": {
     // 导航栏标题颜色及状态栏前景颜色, 仅支持 black/white
     "navigationBarTextStyle": "black",
