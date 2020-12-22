@@ -16,6 +16,8 @@ export default Vue.extend({
   },
   onLoad() {
     //
+    // eslint-disable-next-line no-undef
+    console.log(getApp());
   },
   methods: {}
 });
