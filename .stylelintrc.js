@@ -6,10 +6,10 @@ module.exports = {
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": [ "mixin", "extend", "content", "each", "if", "else", "at-root", "function", "return" ]
+        "ignoreAtRules": [ "include", "mixin", "extend", "content", "each", "if", "else", "at-root", "function", "return" ]
       }
     ],
-    "unit-allowed-list": ["em", "rem", "%", "s", "px", "upx", "rpx"],
+    "unit-allowed-list": ["vh", "vw", "em", "rem", "%", "s", "px", "upx", "rpx"],
     "unit-no-unknown": [true, {
       ignoreUnits: ["rpx"]
     }]

@@ -96,7 +96,4 @@ export default Vue.extend({
     padding: 0 20rpx;
   }
 }
-.test {
-  width: 1ex;
-}
 </style>

@@ -35,5 +35,3 @@ export default Vue.extend({
   methods: {}
 });
 </script>
-
-<style></style>

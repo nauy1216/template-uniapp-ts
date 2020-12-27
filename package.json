@@ -41,7 +41,7 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "lint": "eslint src --ext .vue,.ts,.js --fix",
-    "lint:style": "stylelint src/**/*.{css,scss} --fix",
+    "lint:style": "stylelint src/**/*.{css,scss,vue} --fix",
     "mock": "node server/mockServer.js",
     "copy:uilib": "node script/copy-uilib.js",
     "build:ele": "node script/build-element.js"
