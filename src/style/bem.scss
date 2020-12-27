@@ -19,9 +19,11 @@ $state-prefix: "is-";
   $E: $element !global;
   $selector: &;
   $currentSelector: "";
+
   @each $unit in $element {
     $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
   }
+
   @if hitAllSpecialNestRule($selector) {
     @at-root {
       #{$selector} {
@@ -30,7 +32,9 @@ $state-prefix: "is-";
         }
       }
     }
-  } @else {
+  }
+
+  @else {
     @at-root {
       #{$currentSelector} {
         @content;
@@ -42,6 +46,7 @@ $state-prefix: "is-";
 @mixin m($modifier) {
   $selector: &;
   $currentSelector: "";
+
   @each $unit in $modifier {
     $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
   }
@@ -57,35 +62,42 @@ $state-prefix: "is-";
 @function selectorToString($selector) {
   $selector: inspect($selector);
   $selector: str-slice($selector, 2, -2);
+
   @return $selector;
 }
 
 @function containsModifier($selector) {
-  $selector: selectorToString($selector);
+  $selector: selectortostring($selector);
 
   @if str-index($selector, $modifier-separator) {
     @return true;
-  } @else {
+  }
+
+  @else {
     @return false;
   }
 }
 
 @function containWhenFlag($selector) {
-  $selector: selectorToString($selector);
+  $selector: selectortostring($selector);
 
   @if str-index($selector, "." + $state-prefix) {
     @return true;
-  } @else {
+  }
+
+  @else {
     @return false;
   }
 }
 
 @function containPseudoClass($selector) {
-  $selector: selectorToString($selector);
+  $selector: selectortostring($selector);
 
   @if str-index($selector, ":") {
     @return true;
-  } @else {
+  }
+
+  @else {
     @return false;
   }
 }

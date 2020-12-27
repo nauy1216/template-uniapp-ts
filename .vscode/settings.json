@@ -1,10 +1,12 @@
 {
   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
   },
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
   "eslint.validate": ["typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "html", "json", "jsonc"],
   "files.associations": {
     "*.json": "jsonc"
-  }
+  },
+  "stylelint.syntax": "scss"
 }

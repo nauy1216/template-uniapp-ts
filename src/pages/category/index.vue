@@ -20,11 +20,12 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style lang="scss">
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 1rpx;
 }
 </style>
