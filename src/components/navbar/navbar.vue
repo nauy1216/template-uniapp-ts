@@ -162,9 +162,12 @@ $nav-height: 44px;
 .uni-nav-bar-text {
   /* #ifdef APP-PLUS */
   font-size: 34rpx;
+
   /* #endif */
+
   /* #ifndef APP-PLUS */
   font-size: $uni-font-size-lg;
+
   /* #endif */
 }
 
@@ -174,57 +177,62 @@ $nav-height: 44px;
 
 .uni-navbar__content {
   position: relative;
-  background-color: $uni-bg-color;
-  overflow: hidden;
   width: 750rpx;
+  overflow: hidden;
+  background-color: $uni-bg-color;
 }
 
 .uni-navbar__content_view {
   /* #ifndef APP-NVUE */
   display: flex;
+  flex-direction: row;
+
   /* #endif */
   align-items: center;
-  flex-direction: row;
   // background-color: #FFFFFF;
 }
 
 .uni-navbar__header {
   /* #ifndef APP-NVUE */
   display: flex;
+
   /* #endif */
   flex-direction: row;
   height: $nav-height;
-  line-height: $nav-height;
   font-size: 16px;
+  line-height: $nav-height;
   // background-color: #ffffff;
 }
 
 .uni-navbar__header-btns {
   /* #ifndef APP-NVUE */
   display: flex;
+
   /* #endif */
   flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
   width: 120rpx;
   padding: 0 6px;
-  justify-content: center;
-  align-items: center;
 }
 
 .uni-navbar__header-btns-left {
   /* #ifndef APP-NVUE */
   display: flex;
+  justify-content: flex-start;
+
   /* #endif */
   width: 150rpx;
-  justify-content: flex-start;
 }
 
 .uni-navbar__header-btns-right {
   /* #ifndef APP-NVUE */
   display: flex;
+  justify-content: flex-end;
+
   /* #endif */
   width: 150rpx;
   padding-right: 30rpx;
-  justify-content: flex-end;
 }
 
 .uni-navbar__header-container {
@@ -234,6 +242,7 @@ $nav-height: 44px;
 .uni-navbar__header-container-inner {
   /* #ifndef APP-NVUE */
   display: flex;
+
   /* #endif */
   flex: 1;
   align-items: center;
@@ -253,12 +262,13 @@ $nav-height: 44px;
 .uni-navbar--shadow {
   /* #ifndef APP-NVUE */
   box-shadow: 0 1px 6px #ccc;
+
   /* #endif */
 }
 
 .uni-navbar--border {
-  border-bottom-width: 1rpx;
-  border-bottom-style: solid;
   border-bottom-color: $uni-border-color;
+  border-bottom-style: solid;
+  border-bottom-width: 1rpx;
 }
 </style>

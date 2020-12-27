@@ -115,9 +115,9 @@ export default Vue.extend({
 
 <style>
 .content {
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 </style>

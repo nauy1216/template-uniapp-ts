@@ -34,5 +34,3 @@ export function mapActions(moduleName: any, key: any) {
     [key]: modules[moduleName][key]
   };
 }
-
-const a = mapState("global", "screenWidth");

@@ -4,3 +4,6 @@
 /script
 /dist
 package.json
+/**/*.ts
+/**/*.js
+/**/*.vue

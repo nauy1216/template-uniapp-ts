@@ -31,8 +31,8 @@ export default Vue.extend({
 }
 
 .logo {
-  height: 200rpx;
   width: 200rpx;
+  height: 200rpx;
   margin: 200rpx auto 50rpx auto;
 }
 

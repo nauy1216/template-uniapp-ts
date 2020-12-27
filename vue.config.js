@@ -1,5 +1,6 @@
 /* eslint-disable */
 const path = require("path");
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 function addStyleResource(rule) {
   rule
@@ -12,7 +13,15 @@ function addStyleResource(rule) {
 
 module.exports = {
   configureWebpack: config => {
-      config.resolve.alias["@r$"] = path.resolve(process.cwd());
+    config.resolve.alias["@r$"] = path.resolve(process.cwd());
+    config.plugins.push(new StylelintPlugin({
+      // context: process.cwd(),
+      files: ['src/**/*.{css,scss,vue}'],
+      fix: true,
+      cache: true,
+      emitError: true,
+      emitWarning: true
+    }))
   },
   chainWebpack: config => {
     const types = ["vue-modules", "vue", "normal-modules", "normal"];

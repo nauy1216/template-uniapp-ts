@@ -41,6 +41,7 @@ export default Vue.extend({
   @include e(user) {
     height: 360rpx;
   }
+
   @include e(user-img) {
     width: 200rpx;
     height: 200rpx;

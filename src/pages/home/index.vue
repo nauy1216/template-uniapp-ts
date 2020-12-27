@@ -14,7 +14,7 @@
         disabled
         search-icon="search"
         v-model="keyword"
-        style="width: 460rpx"
+        style="width: 460rpx;"
       ></u-search>
     </view>
     <!-- <u-button type="primary" @click="handleClick">主要按钮</u-button> -->
@@ -89,11 +89,14 @@ export default Vue.extend({
 @include b(home) {
   @include e(top) {
     box-sizing: content-box;
-    height: 44px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    height: 44px;
     padding: 0 20rpx;
   }
+}
+.test {
+  width: 1ex;
 }
 </style>
