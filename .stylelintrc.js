@@ -12,6 +12,7 @@ module.exports = {
     "unit-allowed-list": ["vh", "vw", "em", "rem", "%", "s", "px", "upx", "rpx"],
     "unit-no-unknown": [true, {
       ignoreUnits: ["rpx"]
-    }]
+    }],
+    "selector-type-no-unknown": null
   },
 }

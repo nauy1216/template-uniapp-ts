@@ -1,10 +1,19 @@
 <template>
   <view class="content">
-    <u-button type="primary" @click="goCenter">go center</u-button>
     <u-button type="primary" @click="showToast">wx.showToast</u-button>
     <u-button type="primary" @click="showModal">wx.showModal</u-button>
     <u-button type="primary" @click="showLoading">wx.showLoading</u-button>
     <u-button type="primary" @click="showActionSheet">wx.showActionSheet</u-button>
+    <u-button type="primary" @click="showNavigationBarLoading"
+      >wx.showNavigationBarLoading</u-button
+    >
+    <u-button type="primary" @click="setNavigationBarTitle">wx.setNavigationBarTitle</u-button>
+    <u-button type="primary" @click="setNavigationBarColor">wx.setNavigationBarColor</u-button>
+    <u-button type="primary" @click="hideHomeButton">wx.hideHomeButton</u-button>
+    <u-button type="primary" @click="startPullDownRefresh">wx.startPullDownRefresh</u-button>
+    <u-button type="primary" @click="getMenuButtonBoundingClientRect"
+      >wx.getMenuButtonBoundingClientRect</u-button
+    >
   </view>
 </template>
 
@@ -16,11 +25,6 @@ export default Vue.extend({
     return {};
   },
   methods: {
-    goCenter() {
-      uni.navigateTo({
-        url: "/app/center/index"
-      });
-    },
     showToast() {
       uni.showToast({
         title: "成功",
@@ -67,6 +71,39 @@ export default Vue.extend({
           console.log(res.errMsg);
         }
       });
+    },
+    showNavigationBarLoading() {
+      uni.showNavigationBarLoading();
+    },
+    setNavigationBarTitle() {
+      uni.setNavigationBarTitle({
+        title: "hello"
+      });
+    },
+    setNavigationBarColor() {
+      uni.setNavigationBarColor({
+        frontColor: "#ffffff",
+        backgroundColor: "#ff0000",
+        animation: {
+          duration: 400,
+          timingFunc: "easeIn"
+        }
+      });
+    },
+    hideHomeButton() {
+      uni.hideHomeButton();
+    },
+    startPullDownRefresh() {
+      uni.startPullDownRefresh({
+        success() {
+          setTimeout(() => {
+            uni.stopPullDownRefresh();
+          }, 1000);
+        }
+      });
+    },
+    getMenuButtonBoundingClientRect() {
+      console.log("getMenuButtonBoundingClientRect", uni.getMenuButtonBoundingClientRect());
     }
   }
 });

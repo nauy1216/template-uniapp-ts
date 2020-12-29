@@ -70,10 +70,13 @@ export default Vue.extend({
     }
   },
   onLoad() {
-    debugger;
-    // this.$http.get("/datalist").then(res => {
-    //   console.log(res);
-    // });
+    uni.showTabBarRedDot({
+      index: 0
+    });
+    wx.setTabBarBadge({
+      index: 0,
+      text: "99"
+    });
   },
   methods: {
     change(index) {

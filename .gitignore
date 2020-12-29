@@ -4,6 +4,10 @@ unpackage/
 dist/
 .uview-ui/
 .uni-ui/
+uilib-uview-ui/
+uilib-uni-ui/
+ui_uview-ui/
+ui_uni-ui/
 
 # local env files
 .env.local
