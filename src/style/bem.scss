@@ -32,9 +32,7 @@ $state-prefix: "is-";
         }
       }
     }
-  }
-
-  @else {
+  } @else {
     @at-root {
       #{$currentSelector} {
         @content;
@@ -71,9 +69,7 @@ $state-prefix: "is-";
 
   @if str-index($selector, $modifier-separator) {
     @return true;
-  }
-
-  @else {
+  } @else {
     @return false;
   }
 }
@@ -83,9 +79,7 @@ $state-prefix: "is-";
 
   @if str-index($selector, "." + $state-prefix) {
     @return true;
-  }
-
-  @else {
+  } @else {
     @return false;
   }
 }
@@ -95,9 +89,7 @@ $state-prefix: "is-";
 
   @if str-index($selector, ":") {
     @return true;
-  }
-
-  @else {
+  } @else {
     @return false;
   }
 }
